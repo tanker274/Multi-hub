@@ -29,7 +29,7 @@ body {
   background: radial-gradient(1200px 600px at 10% 10%, rgba(10,24,40,0.6), transparent 10%),
               radial-gradient(1000px 500px at 90% 90%, rgba(5,12,30,0.5), transparent 12%),
               linear-gradient(135deg, var(--primary-bg), var(--secondary-bg) 55%, var(--primary-bg));
-  position: relative; /* AJOUTER CETTE LIGNE */
+              position: relative; /* AJOUTER CETTE LIGNE */
 
 }
 
@@ -374,7 +374,6 @@ article p {
   color: rgba(238,248,255,0.92);
 }
 
-/* small tag */
 article .type {
   font-size: 0.95rem;
   font-style: italic;
@@ -383,8 +382,10 @@ article .type {
   padding: 8px 12px;
   background: linear-gradient(180deg, rgba(255,255,255,0.012), rgba(0,0,0,0.25));
   border-radius: 10px;
-  border-left: 4px solid linear-gradient(180deg, var(--accent-color), var(--accent-color-2));
-  border-left-color: var(--accent-color);
+
+  /* ❗ Correction de l’erreur */
+  border-left: 4px solid var(--accent-color);
+
   z-index: 2;
 }
 
@@ -392,8 +393,9 @@ article:hover .type {
   color: #e6fbff;
   letter-spacing: 0.6px;
   background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(0,0,0,0.45));
-  border-left-color: #fff;
+  border-left-color: var(--accent-color-2);
 }
+
 
 /* =========================
    BOUTONS CARTES

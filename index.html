@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Multi-hub - Une communauté florissante de jeux RP">
+  <meta name="theme-color" content="#5bd1ff">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Multi-hub - Communauté Gaming</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Canvas pour particules animées -->
+  <canvas id="particles" aria-hidden="true"></canvas>
+
+  <!-- Header -->
+  <header role="banner">
+    Multi-hub | Une communauté florissante
+  </header>
+
+  <!-- Navigation -->
+  <nav role="navigation" aria-label="Navigation principale">
+    <ul>
+      <li><a href="#accueil">Accueil</a></li>
+      <li><a href="#" id="openLogin">Connexion</a></li>
+      <li><a href="#" id="openContact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Contenu principal -->
+  <main role="main" id="accueil">
+    <div class="info">
+      Bienvenue dans le site Multi-hub !<br>
+      Découvrez nos communautés : Minecraft, Phasmophobia, SCP.<br>
+      Des développeurs et staff travaillent activement sur le projet.<br>
+      N'hésitez pas à rejoindre l'une des communautés !
+    </div>
+
+    <!-- Section cartes -->
+    <section id="communaute" aria-label="Nos communautés">
+
+      <article class="card1" role="article" tabindex="0">
+        <h3>Minecraft</h3>
+        <p>Pour commencer tranquillement.</p>
+        <p class="type">RP / Guerre</p>
+        <button type="button" data-link="coming-soon.html" aria-label="En savoir plus sur Minecraft">S'informer</button>
+      </article>
+
+      <article class="card2" role="article" tabindex="0">
+        <h3>Phasmophobia</h3>
+        <p>Du RP chasseur de Phantoms immersif.</p>
+        <p class="type">RP / Horreur</p>
+        <button type="button" data-link="coming-soon.html" aria-label="En savoir plus sur Phasmophobia">S'informer</button>
+      </article>
+
+      <article class="card3" role="article" tabindex="0">
+        <h3>SCP</h3>
+        <p>La chose la plus avancée et immersive.</p>
+        <p class="type">RP / Dark RP / Horreur / FPS / Recherche</p>
+        <button type="button" data-link="coming-soon.html" aria-label="En savoir plus sur SCP">S'informer</button>
+      </article>
+
+      <article class="card4" role="article" tabindex="0">
+        <h3>VIP</h3>
+        <p>Les petits outils pour aider.</p>
+        <p class="type">Tool / Rapide</p>
+        <button type="button" data-link="coming-soon.html" aria-label="En savoir plus sur VIP">S'informer</button>
+      </article>
+
+    </section>
+  </main>
+
+  <!-- Modale Connexion -->
+  <div id="loginModal" class="modal" role="dialog" aria-labelledby="loginTitle" aria-modal="true" aria-hidden="true">
+    <div class="modal-content">
+      <button class="close" type="button" aria-label="Fermer la modale">&times;</button>
+      <h2 id="loginTitle">Connexion <span class="beta">(Bêta)</span></h2>
+      <p>Les fonctionnalités de connexion sont en bêta et non fonctionnelles pour le moment.</p>
+      <form id="loginForm">
+        <label for="username">Nom d'utilisateur :</label>
+        <input type="text" id="username" name="username" disabled aria-disabled="true" placeholder="Votre nom d'utilisateur">
+        <label for="password">Mot de passe :</label>
+        <input type="password" id="password" name="password" disabled aria-disabled="true" placeholder="Votre mot de passe">
+        <button type="submit" disabled aria-disabled="true">Se connecter</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Modale Contact -->
+  <div id="contactModal" class="modal-full" role="dialog" aria-labelledby="contactTitle" aria-modal="true" aria-hidden="true">
+    <div class="modal-content-full">
+      <button class="close" type="button" aria-label="Fermer la modale">&times;</button>
+      <h2 id="contactTitle">Contactez-nous <span class="beta">(Bêta)</span></h2>
+      <p>Les fonctionnalités de contact sont en bêta et non fonctionnelles pour le moment.</p>
+      <form id="contactForm">
+        <label for="name">Nom :</label>
+        <input type="text" id="name" name="name" placeholder="Votre nom" disabled aria-disabled="true">
+        <label for="email">Email :</label>
+        <input type="email" id="email" name="email" placeholder="votre@email.com" disabled aria-disabled="true">
+        <label for="message">Message :</label>
+        <textarea id="message" name="message" rows="6" placeholder="Votre message" disabled aria-disabled="true"></textarea>
+        <button type="submit" disabled aria-disabled="true">Envoyer</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer role="contentinfo">
+    © 2025 Tous droits réservés. | UTILISATEUR : <strong>[INVITÉ]</strong>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

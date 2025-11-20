@@ -137,7 +137,7 @@ class ParticleSystem {
     
     // Réduire le nombre de particules sur appareils à faible mémoire
     if (navigator.deviceMemory && navigator.deviceMemory < 2) {
-      target = Math.min(target, 36);
+      target = Math.min(target, 10);
     }
     
     const DPR = Math.max(1, window.devicePixelRatio || 1);
@@ -653,3 +653,4 @@ if (typeof window !== 'undefined') {
     utils: Utils
   };
 }
+

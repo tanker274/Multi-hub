@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <!-- ============================
+       🔧 CONFIGURATION / META TAGS
+       ============================ -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Multi-hub - Une communauté florissante de jeux RP">
+  <meta name="theme-color" content="#5bd1ff">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Multi-hub - Communauté Gaming</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ============================
+       🌌 PARTICULES FOND ANIMÉ
+       (Canvas pour effets visuels)
+       ============================ -->
+  <canvas id="particles" aria-hidden="true"></canvas>
+
+<div class="beta-fixed-indicator" role="status">
+      <span class="beta-label">BÊTA</span>
+      <p>Cette page est en bêta, certaines fonctionnalités peuvent changer ou des bugs peuvent être présents.</p>
+  </div>
+
+  <!-- ============================
+       🏷️ HEADER / BANNIÈRE
+       ============================ -->
+  <header role="banner">
+    Multi-hub | Une communauté florissante
+  </header>
+
+
+  <!-- ============================
+       📌 NAVIGATION PRINCIPALE
+       ============================ -->
+  <nav role="navigation" aria-label="Navigation principale">
+    <ul>
+      <li><a href="#accueil">Accueil</a></li>
+
+      <!-- Boutons ouvrant la modale Bêta -->
+      <li><a href="#" class="open-beta-modal" data-modal-title="Connexion">Connexion</a></li>
+      <li><a href="#" class="open-beta-modal" data-modal-title="Contact">Contact</a></li>
+    </ul>
+  </nav>
+
+
+  <!-- ============================
+       🏠 CONTENU PRINCIPAL
+       ============================ -->
+  <main role="main" id="accueil">
+
+    <!-- Message d’accueil -->
+    <div class="info">
+      Bienvenue dans le site Multi-hub !<br>
+      Découvrez nos communautés : Minecraft, Phasmophobia, SCP.<br>
+      Des développeurs et staff travaillent activement sur le projet.<br>
+      N'hésitez pas à rejoindre l'une des communautés !
+    </div>
+
+
+    <!-- ============================
+         🗂️ SECTION : COMMUNAUTÉS
+         ============================ -->
+ <section id="communaute" aria-label="Nos communautés">
+
+  <!-- ===== Minecraft ===== -->
+  <article id="card-mc" class="card1" role="article" tabindex="0">
+    <h3>Minecraft</h3>
+    <p>Pour commencer tranquillement.</p>
+    <p class="type">RP / Stratégie / Aventure</p>
+
+    <button type="button" data-link="Minecraft\Minecraft.html"
+            aria-label="En savoir plus sur Minecraft">
+      S'informer
+    </button>
+  </article>
+
+  <!-- ===== Phasmophobia ===== -->
+  <article id="card-phasmo" class="card2" role="article" tabindex="0">
+    <h3>Phasmophobia</h3>
+    <p>Du RP chasseur de Phantoms immersif.</p>
+    <p class="type">RP / Horreur / Immersion totale / Enquête</p>
+
+    <button type="button" data-link="coming-soon.html"
+            aria-label="En savoir plus sur Phasmophobia">
+      S'informer
+    </button>
+  </article>
+
+  <!-- ===== SCP ===== -->
+  <article id="card-scp" class="card3" role="article" tabindex="0">
+    <h3>SCP</h3>
+    <p>La chose la plus avancée et immersive.</p>
+    <p class="type">Dark RP / Horreur / FPS / Recherche / Passionné </p>
+
+    <button type="button" data-link="coming-soon.html"
+            aria-label="En savoir plus sur SCP">
+      S'informer
+    </button>
+  </article>
+
+  <!-- ===== Outils ===== -->
+  <article id="card-outils" class="card4" role="article" tabindex="0">
+    <h3>Outils</h3>
+    <p>Les petits outils pour aider.</p>
+    <p class="type">Outils / Rapide / Pratique</p>
+
+    <button type="button" data-link="coming-soon.html"
+            aria-label="En savoir plus sur VIP">
+      S'informer
+    </button>
+  </article>
+
+</section>
+
+
+    </section>
+  </main>
+
+
+  <!-- ============================
+       🔒 MODALE FONCTIONNALITÉ BÊTA
+       ============================ -->
+  <div id="betaModal" class="modal" role="dialog"
+       aria-labelledby="betaTitle" aria-modal="true" aria-hidden="true">
+
+    <div class="modal-content">
+
+      <!-- Bouton fermer -->
+      <button class="close" type="button" aria-label="Fermer la modale">&times;</button>
+
+      <h2 id="betaTitle">
+        Fonctionnalité <span class="beta">(Bêta)</span>
+      </h2>
+
+      <p style="margin-top: 15px;">
+        Désolé, la page <strong id="betaFeatureName" style="color: var(--accent-color);"></strong>
+        n'est pas encore fonctionnelle.
+      </p>
+
+      <p>Nos équipes travaillent activement dessus. Revenez bientôt !</p>
+
+      <button type="button" class="close-btn" style="margin-top: 20px;">
+        Compris
+      </button>
+    </div>
+  </div>
+
+
+  <!-- ============================
+       📌 FOOTER / COPYRIGHTS
+       ============================ -->
+  <footer role="contentinfo">
+    © 2025 Tous droits réservés. | UTILISATEUR : <strong>[INVITÉ]</strong>
+  </footer>
+
+
+  <!-- ============================
+       📜 SCRIPT PRINCIPAL
+       ============================ -->
+  <script src="script.js"></script>
+
+</body>
+</html>

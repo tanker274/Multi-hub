@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <!-- ============================
+         🔧 CONFIGURATION / META TAGS
+         ============================ -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-hub - Communauté Gaming</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap">
+</head>
+
+<body>
+
+    <div class="beta-fixed-indicator" role="status">
+        <span class="beta-label">BÊTA</span>
+        <p>Cette page est en bêta, certaines fonctionnalités peuvent changer ou des bugs peuvent être présents.</p>
+    </div>
+
+    <!-- ============================
+         🏷️ HEADER PRINCIPAL
+         ============================ -->
+    <header>
+        <h1 class="title">Multi-hub <span class="text-glow">- Serveur Minecraft</span></h1>
+        <p class="subtitle text-secondary">La communauté de jeu incontournable. Connectez-vous et jouez !</p>
+    </header>
+
+    <!-- ============================
+         📌 NAVIGATION PRINCIPALE
+         ============================ -->
+    <nav class="navigation" aria-label="Navigation principale">
+        <!-- Menu principal gauche -->
+        <ul class="navigation-1">
+            <li><a href="#accueil">Accueil</a></li>
+            <li><a href="#serveurs">Nos Serveurs</a></li>
+            <li><a href="#" class="open-beta-modal" data-modal-title="Support">Support</a></li>
+            <li><a href="#" class="open-beta-modal" data-modal-title="Contact">Contact</a></li>
+        </ul>
+
+        <!-- Menu secondaire droite -->
+        <ul class="navigation-2">
+            <li><a href="#" class="open-beta-modal" data-modal-title="Statistiques">Statistiques</a></li>
+            <li><a href="#" class="open-beta-modal" data-modal-title="Boutique">Boutique</a></li>
+            <li><a href="#" class="open-beta-modal" data-modal-title="Forums">Forums</a></li>
+            <li><a href="#" class="open-beta-modal" data-modal-title="Règlement">Règlement</a></li>
+            <li><a href="#" class="open-beta-modal" data-modal-title="Connexion/Inscription">Connexion/Inscription</a></li> 
+        </ul>
+    </nav>
+
+    <!-- ============================
+         🏠 MAIN / CONTENU PRINCIPAL
+         ============================ -->
+    <main>
+        <!-- Section Accueil -->
+        <section id="accueil">
+            <h2>Bienvenue sur le Multi-hub !</h2>
+            <p>Rejoignez des milliers de joueurs sur nos serveurs de jeu uniques. Nous vous offrons une expérience Minecraft optimisée et sans lag, dans un environnement communautaire sain et actif. Que vous soyez un aventurier solitaire ou un bâtisseur d'équipe, notre hub est l'endroit idéal pour vous.</p>
+            <p class="text-center mt-3">
+                <a href="#serveurs" class="button button-primary">Découvrir les Serveurs</a>
+            </p>
+        </section>
+
+        <!-- Spacer pour la mise en page -->
+        <div class="spacer"></div>
+    </main>
+
+    <!-- ============================
+         📌 FOOTER / COPYRIGHTS
+         ============================ -->
+    <footer role="contentinfo">
+        <div class="footer-content">
+
+            <!-- Liens légaux -->
+            <p class="footer-links">
+                <a href="#mentions">Mentions Légales</a>
+                <span class="separator">|</span>
+                <a href="#confidentialite">Politique de Confidentialité</a>
+            </p>
+            <p class="footer-copyright">
+                &copy; 2025 Tous droits réservés | Multi-hub Communauté Gaming.
+            </p>
+            <p class="footer-status">
+                UTILISATEUR ACTUEL : <strong class="text-glow">[INVITÉ]</strong>
+            </p>
+
+        </div>
+    </footer>
+
+    <!-- ============================
+         🔒 MODALE BÊTA
+         (Affichage dynamique des fonctionnalités en bêta)
+         ============================ -->
+    <div id="betaModal" class="modal">
+        <div class="modal-content">
+
+            <!-- Bouton de fermeture -->
+            <span class="close" id="closeBetaModalBtn">&times;</span>
+
+            <!-- Titre de la modale -->
+            <h2 id="betaModalTitle">Chargement...</h2> 
+
+            <!-- Message principal -->
+            <p class="text-secondary" style="font-size: 1.1rem; margin: 30px 0 20px;">
+                <span class="beta" style="margin-right: 15px;">🚧 En Bêta</span> 
+                Désolé, la page <strong class="text-glow" id="betaModalFeatureName"></strong> n'est pas encore fonctionnelle.
+            </p>
+            <p>Revenez bientôt pour accéder à cette fonctionnalité !</p>
+
+            <!-- Bouton confirmer / fermer -->
+            <button class="button button-primary" id="confirmCloseBetaModalBtn" style="margin-top: 25px;">Compris !</button>
+
+        </div>
+    </div>
+
+    <!-- ============================
+         📜 SCRIPT PRINCIPAL
+         ============================ -->
+    <script src="script.js"></script>
+
+</body>
+</html>

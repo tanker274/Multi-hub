@@ -1,13 +1,9 @@
-EU:
-Le code est accessible au public. Cela ne signifie pas que je vais copier de A à Z le site web. Veuillez respecter les mentions intellectuelles et demander une autorisation, s'il vous plaît.
-Le code est accessible au public. Cela ne signifie pas que je vais copier de A à Z le site web. Veuillez respecter les mentions intellectuelles et demander une autorisation, s'il vous plaît.
+🇫🇷 Version française:
 
-Le code est accessible au public. Cela ne signifie pas que je vais copier de A à Z le site web. Veuillez respecter les mentions intellectuelles et demander une autorisation, s'il vous plaît.
+Le code est accessible au public, mais cela ne signifie pas que le site sera copié intégralement.
+Merci de respecter les droits d’auteur et de demander une autorisation avant toute utilisation.
 
-EN: 
+🇬🇧 English version:
 
-
-The code is publicly accessible. This does not mean that I will copy the website from A to Z. Please respect the intellectual mentions and request authorization, please.
-The code is publicly accessible. This does not mean that I will copy the website from A to Z. Please respect the intellectual mentions and request authorization, please.
-
-The code is publicly accessible. This does not mean that I will copy the website from A to Z. Please respect the intellectual mentions and request authorization, please.
+The code is publicly available, but this does not mean the website will be copied in its entirety.
+Please respect copyright and request authorization before any use.

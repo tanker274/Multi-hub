@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+  <meta name="description" content="Multi-hub - Une communauté florissante de jeux RP : Minecraft, Phasmophobia, SCP et plus encore">
+  <meta name="keywords" content="gaming, communauté, RP, Minecraft, Phasmophobia, SCP, roleplay">
+  <meta name="theme-color" content="#5bd1ff">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Multi-hub - Communauté Gaming">
+  <meta property="og:description" content="Découvrez nos communautés de jeux RP immersifs">
+  <meta property="og:image" content="favicon.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Multi-hub - Communauté Gaming">
+  <meta name="twitter:description" content="Découvrez nos communautés de jeux RP immersifs">
+  <title>Multi-hub - Communauté Gaming | RP Immersif</title>
+  <link rel="preload" href="style.css" as="style">
+  <link rel="preload" href="script.js" as="script">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="favicon.png" type="image/png">
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+</head>
+<body>
+
+  <a href="#main-content" class="skip-to-content">Aller au contenu principal</a>
+  <canvas id="particles" aria-hidden="true"></canvas>
+
+  <!-- Indicateur Beta fixe -->
+  <div class="beta-fixed-indicator" role="status" aria-live="polite">
+    <span class="beta-label">BÊTA</span>
+    <p>Cette page est en bêta, certaines fonctionnalités peuvent changer ou des bugs peuvent être présents.</p>
+  </div>
+
+  <!-- En-tête principal -->
+  <header role="banner">
+    <div class="header-inner">Multi-hub | Une communauté florissante</div>
+  </header>
+
+  <!-- Navigation principale -->
+  <nav role="navigation" aria-label="Navigation principale">
+    <ul>
+      <li><a href="index.html" aria-label="Aller à l'accueil">Accueil</a></li>
+      <li><button type="button" class="open-beta-modal" data-modal-title="Connexion" aria-label="Ouvrir la connexion (fonctionnalité en développement)">Connexion</button></li>
+      <li><button type="button" class="open-beta-modal" data-modal-title="Contact" aria-label="Ouvrir le contact (fonctionnalité en développement)">Contact</button></li>
+    </ul>
+  </nav>
+
+  <!-- Contenu principal -->
+  <main id="main-content">
+    <section class="info" aria-labelledby="welcome-title">
+      <h1 id="welcome-title" class="sr-only">Bienvenue sur Multi-hub</h1>
+      <p>
+        Bienvenue sur <strong>Multi-hub</strong> ! Découvrez nos communautés : 
+        <strong>Minecraft</strong>, <strong>Phasmophobia</strong>, <strong>SCP</strong>.
+        Des développeurs et staff travaillent activement sur le projet. N'hésitez pas à rejoindre notre aventure.
+      </p>
+    </section>
+
+    <!-- Grille des communautés -->
+    <section id="communaute" class="communities" aria-label="Nos communautés">
+      
+      <!-- Carte Minecraft -->
+      <article id="card-mc" class="card card1" role="article" tabindex="0" aria-labelledby="mc-title">
+        <h2 id="mc-title">🎮 Minecraft</h2>
+        <p>Pour commencer tranquillement dans un univers de construction et d'aventure.</p>
+        <p class="type">RP / Stratégie / Aventure</p>
+        <button type="button" data-link="Minecraft/Minecraft.html" aria-label="En savoir plus sur notre serveur Minecraft">
+          Découvrir
+        </button>
+      </article>
+
+      <!-- Carte Phasmophobia -->
+      <article id="card-phasmo" class="card card2" role="article" tabindex="0" aria-labelledby="phasmo-title">
+        <h2 id="phasmo-title">👻 Phasmophobia</h2>
+        <p>Du RP chasseur de Phantoms immersif avec des frissons garantis.</p>
+        <p class="type">RP / Horreur / Immersion / Enquête</p>
+        <button type="button" data-link="coming-soon.html" aria-label="En savoir plus sur Phasmophobia (bientôt disponible)">
+          Bientôt disponible
+        </button>
+      </article>
+
+      <!-- Carte SCP -->
+      <article id="card-scp" class="card card3" role="article" tabindex="0" aria-labelledby="scp-title">
+        <h2 id="scp-title">🔬 SCP</h2>
+        <p>Expériences immersives et scénarios avancés dans l'univers de la Fondation SCP.</p>
+        <p class="type">Dark RP / Horreur / FPS / Recherche</p>
+        <button type="button" data-link="coming-soon.html" aria-label="En savoir plus sur SCP (bientôt disponible)">
+          Bientôt disponible
+        </button>
+      </article>
+
+      <!-- Carte Outils -->
+      <article id="card-outils" class="card card4" role="article" tabindex="0" aria-labelledby="tools-title">
+        <h2 id="tools-title">🛠️ Outils</h2>
+        <p>Les outils pratiques pour aider la communauté et optimiser votre expérience.</p>
+        <p class="type">Outils / Rapide / Pratique</p>
+        <button type="button" data-link="coming-soon.html" aria-label="En savoir plus sur nos outils (bientôt disponible)">
+          Bientôt disponible
+        </button>
+      </article>
+      
+    </section>
+  </main>
+
+  <!-- Modale Beta -->
+  <div id="betaModal" class="modal" role="dialog" aria-labelledby="betaTitle" aria-modal="true" aria-hidden="true">
+    <div class="modal-content" role="document">
+      <button class="close" type="button" aria-label="Fermer la modale">&times;</button>
+      
+      <h3 id="betaTitle">
+        Fonctionnalité <span class="beta">BÊTA</span>
+      </h3>
+
+      <p>
+        Désolé, la page <strong id="betaFeatureName" style="color:var(--accent-primary);"></strong> 
+        n'est pas encore fonctionnelle.
+      </p>
+
+      <p>
+        Nos équipes travaillent activement dessus. Revenez bientôt pour découvrir les nouveautés !
+      </p>
+      
+    </div>
+  </div>
+
+  <!-- Pied de page -->
+  <footer role="contentinfo">
+    <p>
+      © 2025 Multi-hub - Tous droits réservés. | 
+      UTILISATEUR : <strong>[INVITÉ]</strong>
+    </p>
+  </footer>
+
+  <!-- Script principal -->
+  <script src="script.js" defer></script>
+  
+  <!-- Schema.org pour le SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Multi-hub",
+    "description": "Une communauté florissante de jeux RP",
+    "url": "https://multi-hub.example.com"
+  }
+  </script>
+
+</body>
+</html>

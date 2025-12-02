@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Multi-hub - Une communauté florissante de jeux RP : Minecraft, Phasmophobia, SCP et plus encore">
+  <meta name="theme-color" content="#5bd1ff">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Multi-hub - Communauté Gaming">
+  <meta property="og:description" content="Découvrez nos communautés de jeux RP immersifs">
+  <title>Multi-hub - Communauté Gaming</title>
+  <link rel="stylesheet" href="CSS/style.css">
+  <link rel="icon" href="favicon.png" type="image/png">
+</head>
+<body>
+
+  <canvas id="particles" aria-hidden="true"></canvas>
+
+  <!-- Indicateur Beta -->
+  <div class="beta-fixed-indicator" role="status">
+    <span class="beta-label">BÊTA</span>
+    <p>Cette page est en bêta, certaines fonctionnalités peuvent changer.</p>
+  </div>
+
+  <!-- En-tête -->
+  <header>
+    <div class="header-inner">Multi-hub | Une communauté florissante</div>
+  </header>
+
+  <!-- Navigation -->
+  <nav aria-label="Navigation principale">
+    <ul>
+      <li><a href="index.html">Accueil</a></li>
+      <li><button type="button" class="open-beta-modal" data-modal-title="Connexion">Connexion</button></li>
+      <li><button type="button" class="open-beta-modal" data-modal-title="Contact">Contact</button></li>
+    </ul>
+  </nav>
+
+  <!-- Contenu principal -->
+  <main>
+    <section class="info">
+      <p>
+        Bienvenue sur <strong>Multi-hub</strong> ! Découvrez nos communautés : 
+        <strong>Minecraft</strong>, <strong>Phasmophobia</strong>, <strong>SCP</strong>.
+        Des développeurs et staff travaillent activement sur le projet. N'hésitez pas à rejoindre notre aventure.
+      </p>
+    </section>
+
+    <!-- Grille des communautés -->
+    <section class="communities" aria-label="Nos communautés">
+      
+      <!-- Minecraft -->
+      <article id="card-mc" class="card card1">
+        <h2>🎮 Minecraft</h2>
+        <p>Pour commencer tranquillement dans un univers de construction et d'aventure.</p>
+        <p class="type">RP / Stratégie / Aventure</p>
+        <button type="button" data-link="coming-soon.html">
+          Bientôt disponible
+        </button>
+      </article>
+
+      <!-- Phasmophobia -->
+      <article id="card-phasmo" class="card card2">
+        <h2>👻 Phasmophobia</h2>
+        <p>Du RP chasseur de Phantoms immersif avec des frissons garantis.</p>
+        <p class="type">RP / Horreur / Immersion / Enquête</p>
+        <button type="button" data-link="coming-soon.html">
+          Bientôt disponible
+        </button>
+      </article>
+
+      <!-- SCP -->
+      <article id="card-scp" class="card card3">
+        <h2>🔬 SCP</h2>
+        <p>Expériences immersives et scénarios avancés dans l'univers de la Fondation SCP.</p>
+        <p class="type">Dark RP / Horreur / FPS / Recherche</p>
+        <button type="button" data-link="coming-soon.html">
+          Bientôt disponible
+        </button>
+      </article>
+
+      <!-- Outils -->
+      <article id="card-outils" class="card card4">
+        <h2>🛠️ Outils</h2>
+        <p>Les outils pratiques pour aider la communauté et optimiser votre expérience.</p>
+        <p class="type">Outils / Rapide / Pratique</p>
+        <button type="button" data-link="coming-soon.html">
+          Bientôt disponible
+        </button>
+      </article>
+      
+    </section>
+  </main>
+
+  <!-- Modale Beta -->
+  <div id="betaModal" class="modal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal-content">
+      <button class="close" type="button" aria-label="Fermer">&times;</button>
+      
+      <h3>Fonctionnalité En développement</h3>
+
+      <p>
+        Désolé, la page <strong id="betaFeatureName" style="color:var(--accent-primary);"></strong> 
+        n'est pas encore fonctionnelle.
+      </p>
+
+      <p>
+        Nos équipes travaillent activement dessus. Revenez bientôt pour découvrir les nouveautés !
+      </p>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>
+      © 2025 Multi-hub - Tous droits réservés. | 
+      UTILISATEUR : <strong>[INVITÉ]</strong>
+    </p>
+  </footer>
+
+  <script src="JS/script.js"></script>
+
+</body>
+</html>
